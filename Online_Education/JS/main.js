@@ -13,6 +13,18 @@ $(document).ready(function(){
         }else{ 
             $('header').removeClass('header-active');
         }
+
+        $('section').each(function(){
+            var top = $(window).scrollTop();
+            var id = $(this).attr('id');
+            var height = $(this).height();
+            var top = $(this).offset().top - 100;
+
+            if(top >= offset && top < offset + height){
+                $('.navbar ul li a').removeClass('active');
+                $('.navbar').find('[href="#'+ id +'"]').addClass('active');
+            }
+        });
     });
 
 });

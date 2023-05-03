@@ -24,6 +24,23 @@ html {
     overflow-x: hidden;
 }
 
+.heading {
+    font-size: 4rem;
+    color: var(--pink);
+    text-align: center;
+    padding: 0 1rem;
+    padding-top: 6rem;
+    letter-spacing: .2rem;
+    font-weight: 500;
+}
+
+.title {
+    padding: 0 1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    color: #aaa;
+}
 
 header {
     width: 96%;
@@ -201,6 +218,51 @@ header .fa-bars {
     color: var(--violet);
 }
 
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .row .image img {
+    height: 70vh;
+    width: 50vw;
+}
+
+.about .row .content {
+    padding-left: 5rem;
+}
+
+.about .row .content h3 {
+    font-size: 3rem;
+    color: var(--pink);
+}
+
+.about .row .content p {
+    font-size: 1.6rem;
+    color: #999;
+    padding: 1rem 0;
+}
+
+.about .row .content button {
+    height: 3.5rem;
+    width: 17rem;
+    background-color: var(--violet);
+    color: #fff;
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .3);
+    cursor: pointer;
+    font-size: 2rem;
+    transition: .2s;
+}
+
+.about .row .content button:hover {
+    letter-spacing: .2rem;
+    opacity: .8; 
+}
+
+
 header .fa-times {
     transform: rotate(-180deg);
     color: var(--violet);
@@ -255,6 +317,18 @@ header .fa-times {
 
     .home::before {
         display: none;
+    }
+
+    .about .row {
+        flex-flow: column-reverse;
+    }
+    .about .row .image img {
+        height: 60vh;
+        width: 90vw;
+    }
+
+    .about .row .content {
+        padding: 0 2.5rem;
     }
 
 }
