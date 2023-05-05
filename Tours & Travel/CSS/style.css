@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html {
+    overflow-x:  hidden;
+    font-size: 62.5%;
+}
+
+header {
+    width: 96%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 1.5rem; left: 50%;
+    transform: translateX(-50%);
+    border-radius: .5rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    padding: .3rem 2rem;
+    transition: .2s linear;
+}
+header .logo {
+    color: #333;
+    font-size: 3rem;
+}
+
+header .logo span {
+    color: #0098a1;
+}
+
+header .navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0; margin: 0;
+}
+
+header .navbar ul li {
+    margin: 0 1rem;
+}
+
+header .navbar ul li a {
+    font-size: 2rem;
+    color: #333;
+    transition: .2s linear;
+}
+
+header .navbar ul li .active,
+header .navbar ul li a:hover {
+    color: #0098a1;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #0098a1;
+    cursor: pointer;
+    display: none;
+}
+
+/* media queries */
+
+@media (max-width:768px) {
+    html {
+        font-size: 55%;
+    }
+
+    header .fa-bars {
+        display: block;
+    }
+
+    header .navbar {
+        position: fixed;
+        top: -100rem; left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: #fff;
+        border-radius: .5rem;
+        box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+        z-index: 1000;
+        transition: .2s linear;
+        opacity: 0;
+    }
+
+    header .navbar ul {
+        flex-flow: column ;
+    }
+
+    header .navbar ul li {
+        margin: 1rem 0;
+        width: 100%;
+        text-align: center; 
+    }
+    
+    header .navbar ul li a {
+        display: block;
+        font-size: 3rem;
+    }
+
+    header .nav-toggle {
+        top: 5rem;
+        opacity: 1;
+    }
+}
