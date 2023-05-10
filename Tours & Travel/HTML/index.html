@@ -4,37 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- font awesome link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- font awesome link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <!-- custom css file link -->
+      <link rel="stylesheet" href="../CSS/style.css">
     
-    <!-- custom css file link -->
-    <link rel="stylesheet" href="../CSS/style.css">
-
-    <title>Tours & Travel</title>
-
+      <title>Tour & Travel</title>
 </head>
 <body>
-    
-    <!-- header section starts -->
+
+    <!-- header section starts  -->
 
     <header>
-        <a href="#" class="logo">travel <span>.</span></a>
+        
+    <a href="#" class="logo">travel <span>.</span></a>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home" class="active">home</a></li>
+            <li><a href="#feature">feature</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#gallery">gallery</a></li>
+            <li><a href="#review">review</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="fas fa-bars"></div>
 
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home" class="active">home</a></li>
-                <li><a href="#feature">feature</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#gallery">gallery</a></li>
-                <li><a href="#review">review</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-        </nav>
-        <div class="fas fa-bars"></div>
     </header>
 
-    <!-- header section ends -->
+    <!-- header section ends  -->
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+
+    <div class="video">
+        <video src="../Image/home-video.mp4" loop muted autoplay></video>
+    </div>
+
+    <div class="content">
+
+        <h1>explore new places, <br>adventure awaits</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione aut natus repellat neque quo eligendi quod ipsa sit ex doloremque?</p>
+
+    </div>
+
+    <div class="form-container">
+
+        <form action="">
+
+            <h3>search your destination</h3>
+
+
+            <span>location</span>
+            <input type="text" placeholder="place you want to visit">
+
+            <span>guest members</span>
+            <input type="number" placeholder="number of peoples">
+
+            <span>arrivals</span>
+            <input type="date">
+
+            <span>leaving</span>
+            <input type="date">
+
+            <input type="submit" value="search">
+        </form>
+
+    </div>
+    </section>
+
+    <!-- home section ends -->
 
 
 
@@ -45,14 +88,10 @@
 
 
 
-
-
-
-
-       <!-- jquery link -->
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-
-       <!-- custom js file link -->
-      <script src="../JS/main.js"></script>
+        <!-- jquery link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  
+        <!-- custom js file link -->
+       <script src="../JS/main.js"></script>
 </body>
 </html>
