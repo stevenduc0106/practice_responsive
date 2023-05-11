@@ -11,7 +11,19 @@ $(document).ready(function(){ // Khi tài liệu HTML được load xong, các �
         if($(window).scrollTop() > 30) {
             $('header').addClass('header-active');  // Nếu scroll lớn hơn 30px, thêm 'header-active' cho phần tử có thẻ HTML 'header', ngược lại, loại bỏ lớp này đi
         } else {
-            $('header').removeClass('header-active');
+            $('header').removeClass('header-active'); 
         }
+
+        $('section').each(function(){  // Duyệt qua từng phần tử có thẻ HTML 'section'
+            var id = $(this).attr('id');
+            var height = $(this).height();
+            var offset = $(this).offset().top - 200;
+            var top = $(window).scrollTop();
+
+            if(top >= offset && top < offset + height) {
+                $('.navbar ul li a').removeClass('active');
+                $('.navbar').find('[data-scroll="' + id +'"]').addClass('active');
+            }
+        });
     });
 });
